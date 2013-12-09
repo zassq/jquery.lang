@@ -1,14 +1,14 @@
 (function($){
     'use strict';
     $.lang = function(o){
-        var lang_strings,
-        defaults = {
+        var defaults = {
             lang: 'zh-cn',
             lang_file: 'zh-cn.json'
         };
 
         var p = this;
         p.s = {};
+        p.lang_strings = '';
 
         var init = function(){
             p.s = $.extend({}, defaults, o);
